@@ -14,7 +14,7 @@ Using the ToDo App, you'll be able to add new thinks to do, generating a list of
 
 ## :camera: Final Image
 
-<img width="600" alt="Final image My Skills app" src="https://user-images.githubusercontent.com/21963291/129618599-79371391-28be-45d9-a7ab-f7f6298b69b1.mov">
+![Video](https://user-images.githubusercontent.com/21963291/129618599-79371391-28be-45d9-a7ab-f7f6298b69b1.mov")
 
 ## :computer: How to clone and run the app
 
