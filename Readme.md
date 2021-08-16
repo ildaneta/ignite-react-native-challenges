@@ -14,7 +14,7 @@ Using the ToDo App, you'll be able to add new thinks to do, generating a list of
 
 ## :camera: Final Image
 
-<img width="600" alt="Final image of project" src="https://user-images.githubusercontent.com/21963291/129627158-d1d515b8-b185-4eca-a0a4-c4c150042480.png">
+<img width="600" alt="Final image of project" src="https://user-images.githubusercontent.com/21963291/129628567-1d0eddaf-17e3-4c5d-a0d4-f37f4b87504d.png">
 
 ## :computer: How to clone and run the app
 
