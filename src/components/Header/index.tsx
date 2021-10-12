@@ -13,9 +13,11 @@ export function Header({ tasksCounter }: HeaderProps) {
   let tasksCounterText;
 
   if (tasksCounter > 1) {
-    tasksCounterText = 'tasks';
-  } else if (tasksCounter == 0 || tasksCounter == 1) {
-    tasksCounterText = 'task';
+    tasksCounterText = 'tarefas';
+  } else if (tasksCounter == 0) {
+    tasksCounterText = 'tarefas';
+  } else {
+    tasksCounterText = 'tarefa';
   }
 
   return (
@@ -23,7 +25,7 @@ export function Header({ tasksCounter }: HeaderProps) {
       <Image source={logoImg} />
 
       <View style={styles.tasks}>
-        <Text style={styles.tasksCounter}>You have </Text>
+        <Text style={styles.tasksCounter}>Você tem </Text>
         <Text style={styles.tasksCounterBold}>
           {tasksCounter} {tasksCounterText}
         </Text>
