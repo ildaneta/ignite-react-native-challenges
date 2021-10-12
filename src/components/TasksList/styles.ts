@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   taskText: {
-    color: '#f6f6f6',
+    color: '#666',
     fontFamily: 'Inter-Medium',
     width: 260
   },
