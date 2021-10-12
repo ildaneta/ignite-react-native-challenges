@@ -13,7 +13,7 @@ describe('TodoInput', () => {
     const { getByPlaceholderText } = render(
       <TodoInput addTask={mockedAddTask} />
     );
-    const inputText = getByPlaceholderText('Add a new todo...');
+    const inputText = getByPlaceholderText('Adicionar novo todo...');
 
     fireEvent.changeText(inputText, 'Primeira task');
     fireEvent(inputText, 'submitEditing');
@@ -26,7 +26,7 @@ describe('TodoInput', () => {
     const { getByPlaceholderText, getByTestId } = render(
       <TodoInput addTask={mockedAddTask} />
     );
-    const inputText = getByPlaceholderText('Add a new todo...');
+    const inputText = getByPlaceholderText('Adicionar novo todo...');
     const addButton = getByTestId('add-new-task-button');
 
     fireEvent.changeText(inputText, 'Primeira task');
@@ -40,7 +40,7 @@ describe('TodoInput', () => {
     const { getByPlaceholderText } = render(
       <TodoInput addTask={mockedAddTask} />
     );
-    const inputText = getByPlaceholderText('Add a new todo...');
+    const inputText = getByPlaceholderText('Adicionar novo todo...');
 
     fireEvent.changeText(inputText, '');
     fireEvent(inputText, 'submitEditing');

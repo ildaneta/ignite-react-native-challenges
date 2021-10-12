@@ -10,18 +10,18 @@ describe('Header', () => {
       <Header tasksCounter={mockedTasksCounter} />
     );
 
-    expect(getByText('0 task'));
+    expect(getByText('0 tarefas'));
 
     mockedTasksCounter = 1;
 
     rerender(<Header tasksCounter={mockedTasksCounter} />);
 
-    expect(getByText('1 task'));
+    expect(getByText('1 tarefa'));
 
     mockedTasksCounter = 2;
 
     rerender(<Header tasksCounter={mockedTasksCounter} />);
 
-    expect(getByText('2 tasks'));
+    expect(getByText('2 tarefas'));
   });
 });
