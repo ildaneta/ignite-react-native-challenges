@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
-import { TextInput, TouchableOpacity, View } from 'react-native';
+import {
+  TextInput,
+  TouchableOpacity,
+  View,
+  TextInputProps,
+} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import { styles } from './styles';
 
-interface TodoInputProps {
+interface TodoInputProps extends TextInputProps {
   addTask: (task: string) => void;
 }
 
-export function TodoInput({ addTask }: TodoInputProps) {
+export function TodoInput({ addTask, ...rest }: TodoInputProps) {
   const [task, setTask] = useState('');
+  const { placeholder } = { ...rest };
 
   function handleAddNewTask() {
     if (!task) {
@@ -25,7 +31,7 @@ export function TodoInput({ addTask }: TodoInputProps) {
     <View style={styles.inputContainer}>
       <TextInput
         style={styles.input}
-        placeholder="Add a new todo..."
+        placeholder={placeholder ? placeholder : 'Adicionar novo todo....'}
         placeholderTextColor="#B2B2B2"
         returnKeyType="send"
         selectionColor="#666666"
