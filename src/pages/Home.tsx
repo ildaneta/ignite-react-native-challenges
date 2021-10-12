@@ -38,7 +38,7 @@ export function Home() {
     <View style={styles.container}>
       <Header tasksCounter={tasks.length} />
 
-      <TodoInput addTask={handleAddTask} />
+      <TodoInput addTask={handleAddTask} placeholder="Adicionar novo todo..." />
 
       <TasksList
         tasks={tasks}
