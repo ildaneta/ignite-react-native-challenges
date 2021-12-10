@@ -18,7 +18,7 @@ xcuserdata
 *.moved-aside
 DerivedData
 *.hmap
-*.ipa
+*.iva
 *.xcuserstate
 
 # Android/IntelliJ
@@ -57,3 +57,9 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+.gitattributes
+.watchmanconfig
+.buckconfig
+.editorconfig
+.flowconfig
