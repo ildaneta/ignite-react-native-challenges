@@ -33,10 +33,12 @@ export function Home() {
 
     const response = await AsyncStorage.getItem(dataKey);
 
-    const responseFormatted = response ? JSON.parse(response) : [];
+    if (response) {
+      const responseFormatted = response ? JSON.parse(response) : [];
 
-    setData(responseFormatted);
-    setSearchListData(data);
+      setData(responseFormatted);
+      setSearchListData(responseFormatted);
+    }
   }
 
   function handleFilterLoginData() {
@@ -61,10 +63,6 @@ export function Home() {
       loadData();
     }, [])
   );
-
-  useEffect(() => {
-    loadData();
-  }, []);
 
   return (
     <>
